@@ -133,6 +133,6 @@ To augment the data sat, I also flipped images and angles thinking that this wou
 ![alt text][image6]
 ![alt text][image7]
 
-After the collection process, I had 15253 number of data points. I then randomly shuffled the data set and put 20% of the data into a validation set. I then passed this data to generator which preprocessed this data by normalizing and trimming the images by 70 pixels of top and 25 pixels of botoom of the image so that it only contains roads and not any other objects, and then produces the images for training and validating in batches instead of storing entire data in memory.
+After the collection process, I had 15253 number of data points. The data and driving log can be downloaded from https://drive.google.com/open?id=1d0KFninyPaeV0cYx88fSG-UguLjC-VjN. I then randomly shuffled the data set and put 20% of the data into a validation set. I then passed this data to generator which preprocessed this data by normalizing and trimming the images by 70 pixels of top and 25 pixels of botoom of the image so that it only contains roads and not any other objects, and then produces the images for training and validating in batches instead of storing entire data in memory.
 
 I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 3 as evidenced by the validation loss pleatuing after 3 epochs. I used an adam optimizer so that manually training the learning rate wasn't necessary.
